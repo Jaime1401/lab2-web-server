@@ -9,7 +9,7 @@ class TimeComponent
 data class TimeDTO(val time: LocalDateTime)
 
 @Service
-class TimeService: TimeProvider {
+class TimeService : TimeProvider {
     override fun now() = LocalDateTime.now()
 }
 
